@@ -1,242 +1,341 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
- html, body{
-      overflow-x: hidden;
-
- }
-.container{
-      width: 100vw;
-      height: fit-content;
-     background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
-     background-size: cover;
-     background-position: center;
-     padding: 2vw;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.mainContent{
-      width: 100vw;
-      height: fit-content;
-      display: flex;
-      /* background-color: red; */
-      justify-content: space-evenly;
-      margin-top: 0vw;
-      /* background-color: RED; */
+html, body {
+  overflow-x: hidden;
 }
 
-.content1{
-      width: 45vw;
-      height: fit-content;
-      /* background-color:; */
-      padding: 4vw;  
-      margin-top: 5vw;  
-}
-.content1 .heading1{
-      font-size: 2.7vw;
-}
-.content1 .heading2{
-      font-size: 4vw;
-      color: #FDD964;
-      font-weight: bold;
-}
-.content2{
-      width: 45vw;
-      height:fit-content;
-      overflow-x: hidden;
-      /* background-color: red;     */
-}
-.mainContentBtn{
-      display: flex;
-      align-items: center;
-      gap: 1.4vw;
-      margin-top: 4vw;
-}
-.mainContentBtn p{
-      color: #8891B7;
-      font-size: 1.1vw;
-}
-.mainContentBtn1{
-      overflow: hidden;
-      background-color: #282D44;
-      padding: 1vw 1.5vw;
-      border: 1px solid #808cbd3e;
-      border-radius: 5px;
-      font-size: 2vw;
-      color: #F9D635;
-}
-.mainContentBtn1 span{
-      background-color: #3F4866;
-      padding: .7vw 1vw;
-      border-radius: 7px;
-      margin-left: 2vw;
-      color: #fff;
-      font-size: 1.5vw;
-      font-weight: bold;
+
+.container {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 47, 71, 1)), to(rgba(40, 47, 71, 0.9))), url(../../../images/backgroungImg.jpg);
+  background: -o-linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+  background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 2vw;
 }
 
-.content2Btns{
-      width: 100%;
-      height: 15%;
-      /* background-color: tan; */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 5vw;
-      /* gap: .5vw; */
+.mainContent {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 6vw;
 }
-.content2Btns1{
-      width: 40%;
-      height: 100%;
-      background-color: #373F5A;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: .5vw;
-      border-radius: 5px;
-      border: 1.5px solid #1BB67F;  
+
+.content1 {
+  width: 45vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4vw;
+  margin-top: 5vw;
 }
-.content2Btns2{
-      width: 40%;
-      height: 100%;
-      background-color: #24293F;
-      display: flex;
-      padding: .5vw;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
+
+.content1 .heading1 {
+  font-size: 2.7vw;
 }
-.payments{
-      width: 80%;
-      height: fit-content;
-      background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
-      background-size: cover;
-      background-position: center;
-      margin: 0 auto;
-      margin-top: 2vw;
-      border-radius: 8px;
-      border: 1px solid #545d7b;
+
+.content1 .heading2 {
+  font-size: 4vw;
+  color: #FFE03A;
+  font-weight: bold;
 }
-.totalPrice{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.2vw;
+
+.content2 {
+  width: 45vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-x: hidden;
 }
-.cards{
-      display: flex;
-      align-items: center;
-      gap: .4vw;
+
+.mainContentBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  gap: 1.4vw;
+  margin-top: 4vw;
 }
-.cards h6{
-      font-size: 1.1vw;
+
+.mainContentBtn p {
+  color: #8891B7;
+  font-size: 1.1vw;
 }
-.ShoppingCart{
-      font-size: 2vw;
-      color: #495374;
+
+.mainContentBtn1 {
+  overflow: hidden;
+  background-color: #282D44;
+  padding: 1vw 1.5vw;
+  border: 1px solid #566781;
+  border-radius: 5px;
+  font-size: 2vw;
+  color: #F9D635;
 }
-.TotalPrice{
-      display: flex;
-      align-items: center;
-      gap: .8vw;
+
+.mainContentBtn1 span {
+  background-color: #3F4866;
+  padding: .7vw 1vw;
+  border-radius: 7px;
+  margin-left: 2vw;
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: bold;
 }
-.TotalPrice h6{
-      font-size: .9vw;
-      color: #8891AD;
+
+.content2Btns {
+  width: 100%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vw;
 }
-.TotalPrice p{
-      font-size: 1vw;
+
+.content2Btns1 {
+  width: 40%;
+  height: 100%;
+  background-color: #373F5A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5vw;
+  border-radius: 5px;
+  border: 1.5px solid #1BB67F;
 }
-.amountInputs{
-      display: flex;
-      align-items: center;
-      justify-content:space-around;
-      padding: 1vw;
+
+.content2Btns2 {
+  width: 40%;
+  height: 100%;
+  background-color: #24293F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5vw;
+  border-radius: 5px;
+ 
 }
-.amountInputs input{
-      padding: 0vw 0vw;
-      background-color: #282E44;
-      border: none;
-      outline: none;
-      border-radius: 5px;
-      color: #fff;
-     
+
+.payments {
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 47, 71, 1)), to(rgba(40, 47, 71, 0.9))), url(../../../images/backgroungImg.jpg);
+  background: -o-linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+  background: linear-gradient(rgba(40, 47, 71, 1), rgba(40, 47, 71, 0.9)), url(../../../images/backgroungImg.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  margin-top: 2vw;
+  border-radius: 8px;
+  border: 1px solid #566781;
 }
-.amountSpan{
-      padding: 1vw .3vw;
-      background-color: #282E44;
-      border:  1px solid #7191B7;
-border-radius: 5px;
+
+.totalPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 1.5vw;
 }
-.amountSpan span{
-      background-color: #3F4866;
-      padding: .7vw .8vw;
-      border-radius: 5px;
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  gap: .4vw;
 }
-.amount p{
-      font-size: 1vw;
+
+.cards h6 {
+  font-size: 1.1vw;
 }
-.price p{
-      font-size: 1vw;
+
+.ShoppingCart {
+  font-size: 2vw;
+  color: #495374;
 }
-.runescape{
+
+.TotalPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  gap: .8vw;
+}
+
+.TotalPrice h6 {
+  font-size: .9vw;
+  color: #8891B7;
+}
+
+.TotalPrice p {
+  font-size: 1vw;
+  color: #fff;
+}
+
+.amountInputs {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       align-items: center;
       justify-content: space-around;
-      padding: 1vw;
-      margin-top: 0vw;
-      
-}
-.runescape input{
-      padding: 1.3vw 1.8vw;
+      padding: 1vw 2vw;
+      gap: .5vw;
+      margin-top: 3vw;
+      /* background-color: red; */
+    }
+    
+    .amountInputs input {
+      padding: .8vw .5vw;
+      background-color: #282E44;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      color: #ffff;
+      width: 70%;
+    }
+    
+    select{
+          background-color: #3F4866;
+          color: #fff;
+          border: none;
+          outline: none;
+          padding: .9vw .1vw;
+          border-radius: 4px;
+          font-size: .8rem;
+          font-weight:600;
+    }
+    select option{
+          margin: 1vw;
+          background: #3F4866;
+          color: #fff;
+          border: none;
+          outline: none;
+          font-size: 1.1vw;
+          margin: 1vw !important;
+    }
+    .amountInputs input::placeholder{
+          color: #8891B7;
+    }
+    .amountSpan {
+      padding: .6vw .3vw;
+      background-color: #282E44;
+      border: .1px solid #334052;
+      border-radius: 5px;
+    }
+    
+    .amountSpan span {
+      background-color: #3F4866;
+      padding: .8vw 1vw;
+      border-radius: 5px;
+      color: #fff;
+      font-size: .9rem;
+      font-weight: 600;
+    }
+    
+    .amount p {
+      margin-left: 1vw;
+  font-size: 1vw;
+  color: #5c6993;
+  font-weight: 700;
+    }
+    
+    .price p {
+      font-weight: 700;
+      margin-left: 1vw;
+      font-size: 1vw;
+      color: #5c6993;
+    }
+    
+   
+.RSMINE {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 1vw 2vw;
+      gap: .5vw;
+      /* background-color: red; */
+      /* margin-top: 0vw; */
+    }
+    
+    .RSMINE input {
+      width: 50%;
+      padding: 1.4vw  1.2vw;
       background-color: #282E44;
       border: none;
       outline: none;
       border-radius: 5px;
       color: #fff;
-      border:  1px solid #7191B7;
-      border-radius: 5px;
+      border: .1px solid #334052;
+    }
+    .RSMINE input::placeholder{
+          color: #8891B7;
+    }
+
+.gci {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+  object-position: center;
 }
-.gci{
-      width: 85%;
-      height: 85%;
-      object-fit: contain;
-      object-position: center;
-}
+
 .visaCards {
-      padding:2vw;
-   
+  padding: 2vw 2.4vw;
 }
-.visaCards h6{
-      font-size: 1vw;
+
+.visaCards h6 {
+  font-size: 1vw;
 }
-.Card{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-gap: 1vw;
-margin-top: 1vw;
+
+.Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 1vw;
 }
-.Cards{
-width: 100%;
-height: 10%;
-/* background-color: green; */
-display: flex;
-align-items: center;
-justify-content: space-between;
+
+.Cards,
+.CardsSkip,
+.CardsSkips {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.CardsSkip{
-width: 100%;
-height: 10%;
-/* background-color: green; */
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.CardsSkips{
-width: 100%;
-height: 10%;
-/* background-color: green; */
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-}
+
 .CardsSkip,
 .CardsSkips {
   display: none;
@@ -247,323 +346,447 @@ justify-content: space-evenly;
   display: flex;
 }
 
+.visa1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 8vh;
+  background-color: #373F5A;
+  border-radius: 6px;
+  transition: all ease 1s;
+}
 
-.visa1{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 30% ;
-      height: 8vh;
-      background-color: #373F5A;
-      border-radius: 6px;
-      transition: all ease 1s;
+.visa1 img {
+  width: 65%;
+  height: 65%;
+}
 
+.visaMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 7vh;
+  background-color: #282E44;
+  border-radius: 6px;
+  transition: all ease 1s;
 }
-.visa1 img{
-      width: 65%;
-      height: 65%;
+
+.visaMore:hover {
+  border: 1px solid #1BB67F;
 }
-.visaMore{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 30% ;
-      height: 7vh;
-      background-color: #282E44;
-      border-radius: 6px;
-      transition: all ease 1s;
+
+.visa1:hover {
+  border: 1px solid #1BB67F;
 }
-.visaMore:hover{
-      border: 1px solid #1BB67F; 
-}
-.visa1:hover{
-      border: 1px solid #1BB67F;
-}
+
 .selectedCard {
-      border: 2px solid green;
-      position: relative;
+  border: 2px solid green;
+  position: relative;
+}
+
+.tickMark {
+  display: none;
+  position: absolute;
+  top: -10%;
+  left: 95%;
+  font-size: 18px;
+  color: #fff;
+  background: #1BB67F;
+  border-radius: 50%;
+  transition: all ease 1s;
+}
+
+.selectedCard .tickMark {
+  display: inline-block;
+}
+
+.bank img {
+  border-radius: 5px;
+}
+
+.buyButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw 2vw;
+}
+
+.buyButton button {
+  width: 90%;
+  padding: 1vw 0;
+  background-color: #1BB67F;
+  font-size: 1.4vw;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .3vw;
+}
+
+.buyButton img {
+  width: 8%;
+  height: 8%;
+}
+
+.whyPie {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7vw;
+  gap: 1vw;
+  transform: translateY(-100%);
+}
+
+.whyPie h5 {
+  color: #5c6993;
+  text-decoration: underline;
+  font-size: 1.2vw;
+}
+
+.whyPie h5:hover {
+  color: white;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+      .container{
+            padding: 5vw 0;
+      }
+      .totalPrice{
+            padding: 1vw 3.8vw;
+      }
+  .mainContent {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 2vw 3vw;
+        margin-top: 18vw;
+  }
+  .content1 {
+        width: 90%;
+        height: 20vh;
+        margin-top: 10vw;
+        padding: 1vw;
+  }
+  .payments {
+        overflow-x: hidden;
+        width: 100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin-top: 5vw;
+        padding: 2vw;
+  }
+  .content1 .heading1 {
+        font-size: 4vw;
+  }
+  .content1 .heading2 {
+      margin-top: 4vw;
+        font-size: 7.5vw;
+        color: #FDD964;
+        font-weight: bold;
+  }
+  .mainContentBtn {
+      margin-top: 6vw;
+        gap: 3vw;
+  }
+  .mainContentBtn p {
+        color: #8891B7;
+        font-size: 3vw;
+  }
+  .mainContentBtn1 {
+        font-size: 4.5vw;
+        padding: 2vw 4vw;
+  }
+  .content2Btns1 {
+        width: 49%;
+  }
+  .content2Btns2 {
+        width: 49%;
+  }
+  .mainContentBtn1 span {
+        font-size: 5vw;
+        padding: 1vw 2vw;
+  }
+  .content2 {
+        margin-top: 7vw;
+        width: 100%;
+  }
+  .cards h6 {
+      font-weight: 400;
+      font-size: 4vw;
+}
+.ShoppingCart {
+      font-size: 6vw;
+      color: #495374;
+}
+  .TotalPrice h6 {
+        font-size: 3vw;
+        color: #8891B7;
+  }
+  .TotalPrice p {
+        font-size: 3.2vw;
+        margin-left: 1vw;
+        font-weight: 600;
+  }
+  .amountInputs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 3.5vw;
+        margin-top: 3vw;
+        padding: 3vw 4vw;
+  }
+  .amountSpan{
+      padding: 1vw 1vw;
+  }
+  .amountInputs input {
+      padding: 1.6vw;
+        font-size: 4.5vw;
+        width: 57%;
+  }
+  .amountSpan span{
+padding: 1.5vw 2.2vw;
+  }
+  select {
+      width: 40%; 
+      height: auto;
+      padding: 8px 3px;
+      font-size: 12px; 
+      box-sizing: border-box;
     }
     
-    .tickMark {
-      display: none;
-      position: absolute;
-      top: -10%;
-      left: 95%;
-      font-size: 18px;
-      color: #fff;
-      background: #1BB67F;
-      border-radius: 50%;
-      transition: all ease 1s;
+    /* Style options within the select element */
+    select option {
+      font-size: 14px;
     }
-    
-    .selectedCard .tickMark {
-      display: inline-block;
-    }
-    
-    
-.bank img{
-      /* background-color:#07078f; */
-      border-radius: 5px;
-      /* padding: 1vw 1vw; */
-
+  .amountSpan {
+        padding: 1.5vw 2vw;
+  }
+  .amount p {
+      margin-left: 5vw;
+      font-size: 3vw;
 }
-.buyButton{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1vw 2vw;
-}
-.buyButton button{
-      width: 90%;
-      padding: 1vw 0;
-      background-color: #1BB67F;
-      font-size: 1.4vw;
-      color: #fff;
-      border: none;
-      outline: none;
-      border-radius: 5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: .3vw;
-}
-.buyButton img{
-      width: 8%;
-height: 8%;
-}
-
-.whyPie{
-      display: flex;
-      flex-direction: column;
-      margin-left: 7vw;
-      gap: 1vw;
-      /* transform: translateY(-100%); */
-}
-.whyPie h5{
-      color: #5c6993;
-      text-decoration: underline;
-      font-size: 1.2vw;
-
-}
-.whyPie h5:hover{
-      color: white;
-}
-
-@media screen and (width > 300px) and (width < 768px){
-      .mainContent{
-            flex-direction: column;
-            padding: 2vw 3vw;
-      }   
-      .content1{
-            width: 90%;
-            height: 20vh;
-            margin-top: 10vw;
-      }
-      .payments{
-            overflow-x: hidden;
-            width: 90%;
-            height: fit-content;
-            margin-top: 5vw;
-            padding: 2vw;
-      }
-      .content1 .heading1{
-            font-size: 5vw;
-      }
-      .content1 .heading2{
-            font-size: 9vw;
-            color: #FDD964;
-            font-weight: bold;
-      }
-      .mainContentBtn{
-            gap: 3vw;
-      }
-      .mainContentBtn p{
-            color: #8891B7;
-            font-size: 3vw;
-      }
-      .mainContentBtn1{
-            /* width: 50%; */
-            font-size: 7vw;
-            padding: 1vw 4vw;
-      }
-      .content2Btns1{
-            width: 45%;
-      }
-      .content2Btns2{
-            width: 45%;
-      }
-      .mainContentBtn1 span{
-            font-size: 5vw;
-      }
-      .content2{
-            margin-top: 7vw;
-            width: 100%;
-      }
-      .cards h6{
-            font-size: 3vw;
-      }
-      .ShoppingCart{
-            font-size: 5vw;
-            color: #495374;
-      }
-      .TotalPrice h6{
-            font-size: 3vw;
-            color: #887D87;
-      }
-      .TotalPrice p{
-            font-size: 3vw;
-      }
-      .amountInputs{
-            display: flex;
-            gap: 2vw;
-            margin-top: 1vw;
-            padding: 3vw 4vw;
-      }
-      .amountInputs input{
-            font-size: 4vw;
-            width: 80%;
-      }
-      .amountSpan{
-            padding: 3vw 2vw;
-      }
-      .amount p{
-            font-size: 3vw;
-      }
-      .price p{
-            font-size: 3vw;
-      }
-      .runescape{
-            gap: 1vw;
-            padding: 2vw 4vw;
-      }
-      .runescape input{
-            width: 50%;
-            padding: 3vw 2vw;
-            font-size: 3.5vw;
-      }
-      .visaCards{
-            margin-top: 2vw;
-      }
-      .visaCards h6{
-            font-size: 4vw;
-      }
-      .visa1{
-            margin-top: 2vw;
-            width: 30%;
-            height: 5vh;
-            padding: 1vw 3vw;
-      }
-      .visa1 img{
-            width: 90%;
-      }.buyButton button{
-            font-size: 4vw;
-            padding: 3vw 3vw;
-      }
-      .whyPie{
-            margin-top: 4vw;
-      }
-      .whyPie h5{
-            font-size: 4vw;
-      }
-      .whyPie h2{
-            margin-top: 1vw;
-            font-size: 3.3vw;
-            font-weight: 500;
-      }
+.price p {
+        margin-left: 5vw;
+        font-size: 3vw;
+  }
+  .RSMINE {
+     
+        padding: 1vw 3.5vw;
+        gap: 3.5vw;
+  }
+  .RSMINE input {
+        width: 53%;
+        padding: 4vw 3vw;
+        font-size: 3.7vw;
+  }
+  .visaCards {
+        margin-top: 2vw;
+        padding: 2vw 3.8vw;
+  }
+  .visaCards h6 {
+        font-size:.775rem;
+  }
+  .visa1 {
+        margin-top: 2vw;
+        width: 30%;
+        height: 5vh;
+        padding: 1vw 3vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+  }
+  .visa1 img {
+        width: 90%;
+  }
+  .buyButton button {
+        font-size: 5vw;
+        padding: 3vw 3vw;
+        width: 95%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+                margin-top: 3vw;
+  }
+  .whyPie {
+        margin-top: 4vw;
+        transform: translateY(0%);
+       
+  }
+  .whyPie h5 {
+        font-size: 4vw;
+        color: #5c6993;
+        text-decoration: underline;
+  }
+  .whyPie h5:hover {
+        color: white;
+  }
+  .whyPie h2 {
+        margin-top: 1vw;
+        font-size: 3.3vw;
+        font-weight: 500;
+  }
 }
 
+@media only screen and (width > 768px) and (max-width: 1024px) {
+  .content1 {
+        width: 40vw;
+  }.mainContent{
+      margin-top: 20vw;
+  }
+  .content1 .heading1 {
+        font-size: 3vw;
+  }
+  .content1 .heading2 {
+        font-size: 4vw;
+  }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-      .content1{
-            width: 40vw;
-      }
-      .content1 .heading1{
-            font-size: 3vw;
-      }
-      .content1 .heading1{
-            font-size: 4vw;
-      }
-
-      .content2{
-            width: 50vw;
-            height: fit-content;
-            /* padding: 3vw; */
-      }
-      .mainContentBtn{
-            gap: 2vw;
-      }
-      .mainContentBtn p{
-            color: #8891B7;
-            font-size: 2vw;
-      }
-      .mainContentBtn1{
-            font-size: 3vw;
-            padding: 1.5vw 2.5vw;
-      }
-      .mainContentBtn1 span{
-            font-size: 2vw;
-      }
-      .payments{
-            width: 90%;
-            padding: 2vw;
-      }
-      .cards h6{
-            font-size: 2vw;
-      }
-      .content2Btns2{
-            width: 45%;
-      }
-      .content2Btns1{
-            width: 45%;
-      }
-      .ShoppingCart{
-            font-size: 3vw;
-      }
-      .TotalPrice h6{
-            font-size: 2vw;
-      }
-      .TotalPrice p{
-            font-size: 2vw;
-      }
-      .amountInputs p{
-            font-size: 2vw;
-      }
-      .amountInputs{
-            display: flex;
-            align-items: center;
+  .content2 {
+        width: 50vw;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        /* padding: 3vw; */
+  }
+  .mainContentBtn {
+        gap: 2vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+  }
+  .mainContentBtn p {
+        color: #8891B7;
+        font-size: 2vw;
+  }
+  .mainContentBtn1 {
+        font-size: 3vw;
+        padding: 1.5vw 2.5vw;
+  }
+  .mainContentBtn1 span {
+        font-size: 2vw;
+  }
+  .payments {
+        width: 90%;
+        padding: 2vw;
+  }
+  .cards h6 {
+        font-size: 2vw;
+  }
+  .content2Btns2 {
+        width: 45%;
+  }
+  .content2Btns1 {
+        width: 45%;
+  }
+  .ShoppingCart {
+        font-size: 3vw;
+  }
+  .TotalPrice h6 {
+        font-size: 2vw;
+  }
+  .TotalPrice p {
+        font-size: 2vw;
+  }
+  .amountInputs p {
+        font-size: 2vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
             justify-content: space-around;
-            gap: 2vw;
-            /* padding: 1v w; */
-      }
-      .amountInputs input{
-            width: 70%;
-            padding: 1vw;
-            font-size: 2vw;
-      }
-      .price p{
-            font-size: 2vw;
-      }
-      .runescape input {
-            width: 46%;
-            padding: 2vw;
-            font-size: 2vw;
-      }
-      .gci{
-            width: 70%;
-            height: 70%;
-      } 
-      .visaCards h6{
-            font-size: 2vw;
-      }
-      .visa1{
-            width: 30%;
-            height: 5vh;
-      }
-      .buyButton button{
-            font-size: 2vw;
-            padding: 1.5vw;
-      } 
-      .whyPie h5{
-            font-size: 2.3vw;
-      }
-    }
+        gap: 2vw;
+      
+        /* padding: 1v w; */
+  }
+  .amountInputs input {
+        width: 60%;
+        padding: 1vw;
+        font-size: 2vw;
+  }
+  .price p {
+        font-size: 2vw;
+  }
+  .RSMINE input {
+        width: 46%;
+        padding: 2vw;
+        font-size: 2vw;
+  }
+  .gci {
+        width: 70%;
+        height: 70%;
+        -o-object-fit: contain;
+        object-fit: contain;
+        -o-object-position: center;
+        object-position: center;
+  }
+  .visaCards h6 {
+        font-size: 2vw;
+  }
+  .visa1 {
+        width: 30%;
+        height: 5vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 1vw 3vw;
+  }
+  .visa1 img {
+        width: 90%;
+        height: 90%;
+        -o-object-fit: contain;
+           object-fit: contain;
+        -o-object-position: center;
+           object-position: center;
+  }
+  .buyButton button {
+        font-size: 2vw;
+        padding: 1.5vw;
+        width: 90%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+  }
+  .whyPie h5 {
+        font-size: 2.3vw;
+        color: #5c6993;
+        text-decoration: underline;
+  }
+  .whyPie h5:hover {
+        color: white;
+  }
+}

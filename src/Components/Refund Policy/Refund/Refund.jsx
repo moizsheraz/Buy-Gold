@@ -22,7 +22,7 @@ function Refund() {
 <p>We reserve the right to refund any purchases of in-game digital items created using a VPN or Proxy.
 </p>
 <br />
-<p>RunescapeGP is not held liable for any fees incurred when a refund is issued.
+<p>RSMINEGP is not held liable for any fees incurred when a refund is issued.
 </p>
 <br />
 
@@ -30,7 +30,7 @@ function Refund() {
       <div className={styles.refundBox}>
 <h3>2.0 Right to Refuse Service</h3>
 <br />
-<p>RunescapeGP's services are not available to temporarily or indefinitely suspended RunescapeGP members. RunescapeGP reserves the right, in RunescapeGP's sole discretion, to cancel RunescapeGP accounts. RunescapeGP reserves the right to refuse service to anyone, for any reason, at any time.
+<p>RSMINEGP's services are not available to temporarily or indefinitely suspendedRSMINE members.RSMINE reserves the right, inRSMINE's sole discretion, to cancelRSMINE accounts.RSMINE reserves the right to refuse service to anyone, for any reason, at any time.
 </p>
       </div>
 </div>

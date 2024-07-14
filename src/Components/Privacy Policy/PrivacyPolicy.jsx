@@ -1,18 +1,17 @@
 import React from 'react'
 import Navbar from '../Home/Navbar/Navbar'
-import TrancHistory from './TrancHistory'
-import FAQCard from '../FAQ/FAQS/FAQCard'
-import BuyRSMINE from '../Home/Buy Runescape/BuyRuneScape.jsx'
+import ChatBtn from '../ChatBtn/ChatBtn'
+import BuyRSMINE from '../Home/Buy Runescape/BuyRuneScape'
 import VisaCards from '../Home/VisaCards/VisaCards'
 import Footer from '../Footer/Footer'
-import ChatBtn from '../ChatBtn/ChatBtn.jsx'
-
-function TransactionHistory() {
+import Privacy from './Privacy.jsx'
+import FAQCard from '../FAQ/FAQS/FAQCard'
+function PrivacyPolicy() {
   return (
     <div>
       <ChatBtn/>
       <Navbar/>
-      <TrancHistory/>
+      <Privacy/>
       <FAQCard/>
       <BuyRSMINE/>
       <VisaCards/>
@@ -21,4 +20,4 @@ function TransactionHistory() {
   )
 }
 
-export default TransactionHistory
+export default PrivacyPolicy

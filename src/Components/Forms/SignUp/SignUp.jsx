@@ -59,7 +59,7 @@ const SignUp = forwardRef(({ onClose, openLogin }, ref) => {
         </div>
         <div className={style.LoginSide2}>
           <RxCross1 onClick={onClose} className={style.cross} />
-          {/* <h1>Registration</h1> */}
+          <h1>Registration</h1>
           <form onSubmit={handleRegister} className={style.inputBox}>
             {error && <p className={style.error}>{error}</p>}
             <input
@@ -84,7 +84,7 @@ const SignUp = forwardRef(({ onClose, openLogin }, ref) => {
               required
             />
             <div className={style.terms}>
-              <input
+              <input style={{width:'20%'}}
                 className={style.check}
                 type="checkbox"
                 checked={acceptTerms}

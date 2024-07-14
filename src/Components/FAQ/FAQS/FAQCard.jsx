@@ -23,6 +23,7 @@ function FAQCard() {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
+          
           dots: true
         }
       },
@@ -68,11 +69,6 @@ function FAQCard() {
           <h2>Findeo</h2>
           <h6>Rated us 5/5 on TrustPilot</h6>
           <div className={style.rating}>
-            {/* <FcRating />
-            <FcRating />
-            <FcRating />
-            <FcRating />
-            <FcRating /> */}
             <img src={Stars} alt="" />  
           </div>
           <p>Excellent, Fast and the exactly what i wanted. 5 STARS ALL THE WAY</p>
@@ -81,11 +77,6 @@ function FAQCard() {
           <h2>darski</h2>
           <h6>Rated us 5/5 on TrustPilot</h6>
           <div className={style.rating}>
-            {/* <FcRating />
-            <FcRating />
-            <FcRating />
-            <FcRating />
-            <FcRating /> */}
             <img src={Stars} alt="" />
           </div>
           <p>Amazing service! Bought 50m delivered instantly, will 100% buy again thanks!</p>
@@ -94,11 +85,6 @@ function FAQCard() {
           <h2>Tamin</h2>
           <h6>Rated us 5/5 on TrustPilot</h6>
           <div className={style.rating}>
-            {/* <FcRating />
-            <FcRating />
-            <FcRating />
-            <FcRating />
-            <FcRating /> */}
             <img src={Stars} alt="" />
           </div>
           <p>Bought gold here plenty of times always fast and good people.</p>
@@ -107,11 +93,6 @@ function FAQCard() {
           <h2>Jake</h2>
           <h6>Rated us 5/5 on TrustPilot</h6>
           <div className={style.rating}>
-            {/* <FcRating />
-            <FcRating />
-            <FcRating />
-            <FcRating />
-            <FcRating /> */}
             <img src={Stars} alt="" />
           </div>
           <p>Bought gold for the 1st time super fast and super easy!</p>
@@ -128,7 +109,7 @@ function FAQCard() {
             <img src={Stars} alt="" />
           </div>
           <p>Best site i've used for buying osrs goldpieces.
-          Till next time RunescapeGP!</p>
+          Till next timeRSMINE!</p>
         </div>
       </Slider>
 

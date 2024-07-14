@@ -7,16 +7,12 @@ import FAQ from './Components/FAQ/FAQ';
 import Support from './Components/Support/Support';
 import TrancHistory from './Components/Account/TransactionHistory.jsx';
 import StripeForm from './Components/Forms/StripeForm/StripeForm.jsx';
+import BuyRSPSGold from "./Components/Buy RSPS Gold/BuyRSPSGold.jsx";
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import TermsServices from './Components/Terms&Services/TermsServices.jsx';
 import RefundPolicy from './Components/Refund Policy/RefundPolicy.jsx';
-
-
-
-
-
-
+import Privacy from './Components/Privacy Policy/PrivacyPolicy.jsx';
 
 
 
@@ -24,8 +20,10 @@ const stripePromise = loadStripe("pk_test_51NSNJfK5jFmIR9ElOjj4STpJI0aVKMH0i03dG
 function App() {
   return (
     <Elements stripe={stripePromise}>
+        
       <Router>
     <Routes>
+
       <Route path="/" element={<Home />}/>
       <Route path="/BuyRS3Gold" element={<BuyRS3Gold />}/>
       <Route path="/SellGold" element={<SellGold />}/>
@@ -35,6 +33,8 @@ function App() {
       <Route path="/StripeForm" element={<StripeForm />}/>
       <Route path="/TermsServices" element={<TermsServices />}/>
       <Route path="/RefundPolicy" element={<RefundPolicy />}/>
+      <Route path="/Privacy" element={<Privacy />}/>
+      <Route path="/BuyRSPSGold" element={<BuyRSPSGold />}/>
      
     </Routes>
   </Router>

@@ -1,19 +1,18 @@
 import React from 'react'
 import Navbar from '../Home/Navbar/Navbar'
-import SupportForm from './SupportForm/SupportForm'
-import FAQCard from '../FAQ/FAQS/FAQCard.jsx'
+import Faqs from '../Home/Faqs/Faqss.jsx'
+import VisaCards from '../Home/VisaCards/VisaCards.jsx'
 import BuyRSMINE from '../Home/Buy Runescape/BuyRuneScape.jsx'
-import VisaCards from '../Home/VisaCards/VisaCards'
 import Footer from '../Footer/Footer.jsx'
+import BuyRSPS from './BuyRSPS/BuyRSPS.jsx'
 import ChatBtn from '../ChatBtn/ChatBtn.jsx'
-
-function Support() {
+function BuyRSPSGold() {
   return (
     <div>
       <ChatBtn/>
       <Navbar/>
-      <SupportForm/>
-      <FAQCard/>
+      <BuyRSPS/>
+      <Faqs/>
       <BuyRSMINE/>
       <VisaCards/>
       <Footer/>
@@ -21,4 +20,4 @@ function Support() {
   )
 }
 
-export default Support
+export default BuyRSPSGold

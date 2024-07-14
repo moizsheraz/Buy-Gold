@@ -1,8 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import image from '../../../images/twitters.png';
-import { Link } from 'react-router-dom';
-import { FcRating } from 'react-icons/fc';
 import { IoMenu } from 'react-icons/io5';
 import { RiContactsFill } from 'react-icons/ri';
 import { RxCross1 } from 'react-icons/rx';
@@ -10,7 +9,6 @@ import Login from '../../Forms/Login/Login.jsx';
 import SignUp from '../../Forms/SignUp/SignUp.jsx';
 import GiftForm from '../../Forms/GiftCardForm/GiftForm.jsx';
 import stars from '../../../images/stars.png';
-import TrancHistory from '../../Account/TransactionHistory.jsx';
 
 function Navbar() {
   const leftMenuRef = useRef(null);
@@ -21,10 +19,16 @@ function Navbar() {
   const signUpRef = useRef(null);
   const redeemRef = useRef(null);
   const [isAuthorized, setIsAuthorized] = useState(false); // Add this state
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState(location.pathname); // State for active link
+
   useEffect(() => {
-  setIsAuthorized(localStorage.getItem('isAuthorized') === 'true');
-  }, [])
-  
+    setIsAuthorized(localStorage.getItem('isAuthorized') === 'true');
+  }, []);
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location.pathname]);
 
   function handleMenu() {
     if (leftMenuRef.current) {
@@ -134,65 +138,106 @@ function Navbar() {
               <button onClick={openSignUp} className={styles.btn2}>SIGN UP</button>
             </>
           )}
-          {
-          isAuthorized && <>
-          <Link  to={"/TrancHistory"}>
-          <button className={styles.btn3}>Account</button></Link>
-          </>
-        }
+          {isAuthorized && (
+            <>
+              <Link to="/TrancHistory">
+                <button className={styles.btn3}>Account</button>
+              </Link>
+            </>
+          )}
         </div>
         <hr />
         <div className={styles.leftNavLinks}>
-          <Link to={"/"} className={styles.leftLinks}>Buy OSRS Gold</Link>
-          <Link to={"/BuyRS3Gold"} className={styles.leftLinks}>Buy RS3 Gold</Link>
-          <Link to={"/SellGold"} className={styles.leftLinks}>Sell Gold</Link>
+          <Link
+            to="/"
+            className={`${styles.leftLinks} ${activeLink === '/' ? styles.active : ''}`}
+            onClick={() => setActiveLink('/')}
+          >
+            Buy OSRS Gold
+          </Link>
+          <Link
+            to="/BuyRS3Gold"
+            className={`${styles.leftLinks} ${activeLink === '/BuyRS3Gold' ? styles.active : ''}`}
+            onClick={() => setActiveLink('/BuyRS3Gold')}
+          >
+            Buy RS3 Gold
+          </Link>
+          <Link
+            to="/BuyRSPSGold"
+            className={`${styles.leftLinks} ${activeLink === '/BuyRSPSGold' ? styles.active : ''}`}
+            onClick={() => setActiveLink('/BuyRSPSGold')}
+          >
+            Buy RSPS Gold
+          </Link>
+          <Link
+            to="/SellGold"
+            className={`${styles.leftLinks} ${activeLink === '/SellGold' ? styles.active : ''}`}
+            onClick={() => setActiveLink('/SellGold')}
+          >
+            Sell Gold
+          </Link>
         </div>
         <div className={styles.leftNavLinks2}>
-          <Link to={"/FAQ"} className={styles.leftLinks}>FAQ</Link>
-          <Link to={"/Support"} className={styles.leftLinks}>Support</Link>
+          <Link to="/FAQ" className={styles.leftLinks}>FAQ</Link>
+          <Link to="/Support" className={styles.leftLinks}>Support</Link>
           <Link className={styles.leftLinks}>Blog</Link>
           <Link className={styles.leftLinks} onClick={openRedeem}>Redeem Gift Card</Link>
         </div>
         <div className={styles.leftnavrating}>
           <p>4.7 out of 5 based on 806 user rating</p>
           <div>
-            {/* <FcRating />
-            <FcRating />
-            <FcRating />
-            <FcRating />
-            <FcRating /> */}
             <img src={stars} alt="" />
           </div>
         </div>
       </div>
       <div className={styles.topnav}>
         <div className={styles.topnav1}>
-          <Link to={"/FAQ"} className={styles.links}>FAQ</Link>
-          <Link to={"/Support"} className={styles.links}>Support</Link>
+          <Link to="/FAQ" className={styles.links}>FAQ</Link>
+          <Link to="/Support" className={styles.links}>Support</Link>
           <Link className={styles.links}>Blog</Link>
           <Link className={styles.links} onClick={openRedeem}>Redeem Gift Card</Link>
         </div>
         <div className={styles.topnav2}>
           <p>4.7 out of 5 based on 806 user ratings</p>
-          {/* <FcRating />
-          <FcRating />
-          <FcRating />
-          <FcRating />
-          <FcRating /> */}
           <img className={styles.stars} src={stars} alt="" />
         </div>
       </div>
       <div className={styles.nav}>
         <div className={styles.logo}>
           <IoMenu onClick={handleMenu} className={styles.menubar} />
-          <img src={image} alt="" />
-          <RiContactsFill className={styles.contact} />
+          <Link className={styles.logoLink} to="/"><img src={image} alt="" /></Link>
+          <RiContactsFill onClick={openLogin} className={styles.contact} />
         </div>
         <div className={styles.navItems}>
           <div className={styles.navItems1}>
-            <Link to={"/"} className={styles.navLinks}>Buy OSRS Gold</Link>
-            <Link to={"/BuyRS3Gold"} className={styles.navLinks}>Buy RS3 Gold</Link>
-            <Link to={"/SellGold"} className={styles.navLinks}>Sell Gold</Link>
+            <Link
+              to="/"
+              className={`${styles.navLinks} ${activeLink === '/' ? styles.active : ''}`}
+              onClick={() => setActiveLink('/')}
+            >
+              Buy OSRS Gold
+            </Link>
+            <Link
+              to="/BuyRS3Gold"
+              className={`${styles.navLinks} ${activeLink === '/BuyRS3Gold' ? styles.active : ''}`}
+              onClick={() => setActiveLink('/BuyRS3Gold')}
+            >
+              Buy RS3 Gold
+            </Link>
+            <Link
+              to="/BuyRSPSGold"
+              className={`${styles.navLinks} ${activeLink === '/BuyRSPSGold' ? styles.active : ''}`}
+              onClick={() => setActiveLink('/BuyRSPSGold')}
+            >
+              Buy RSPS Gold
+            </Link>
+            <Link
+              to="/SellGold"
+              className={`${styles.navLinks} ${activeLink === '/SellGold' ? styles.active : ''}`}
+              onClick={() => setActiveLink('/SellGold')}
+            >
+              Sell Gold
+            </Link>
           </div>
           <div className={styles.navItems2}>
             {!isAuthorized && (
@@ -201,13 +246,11 @@ function Navbar() {
                 <button onClick={openSignUp} className={styles.btn2}>SIGN UP</button>
               </>
             )}
-            {/* Account Button For Check Order History  */}
-        {
-          isAuthorized && <>
-          <Link  to={"/TrancHistory"}>
-          <button className={styles.btn3}>Account</button></Link>
-          </>
-        }
+            {isAuthorized && (
+              <Link to="/TrancHistory">
+                <button className={styles.btn3}>Account</button>
+              </Link>
+            )}
           </div>
         </div>
       </div>

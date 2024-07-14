@@ -83,7 +83,7 @@ function HomeContent() {
         <div className={style.mainContent}>
           <div className={style.content1}>
             <h1 className={style.heading1}>Buy & Sell</h1>
-            <h1 className={style.heading2}>Runescape Gold</h1>
+            <h1 className={style.heading2}>RSMINE Gold</h1>
             <div className={style.mainContentBtn}>
               <div>
                 <p>OSRS Gold</p>
@@ -124,13 +124,12 @@ function HomeContent() {
                   <p>${price}</p>
                 </div>
               </div>
-
               {/* Amount Input Filed--------- */}
               <div className={style.amountInputs}>
                 <div className={style.amount}>
                   <p>Amount</p>
                   <div className={style.amountSpan}>
-                    <input
+                    <input style={{width:'75%'}}
                       type="text"
                       value={amount}
                       onChange={handleAmountChange}
@@ -148,14 +147,20 @@ function HomeContent() {
                       onChange={handlePriceChange}
                       placeholder='$ 0'
                     />
-                    <span>M</span>
+                    <select name="" id="">
+                      <option value="">USD</option>
+                      <option value="">EUR</option>
+                      <option value="">GPB</option>
+                      <option value="">CAD</option>
+                      <option value="">AUD</option>
+                      </select>
                   </div>
                 </div>
               </div>
 
               {/* Runeescape Field--- */}
-              <div className={style.runescape}>
-                <input type="text" placeholder='Runescape Name' />
+              <div className={style.RSMINE}>
+                <input style={{width:'48%'}} type="text" placeholder='RSMINE Name' />
                 <input type="text" placeholder='Coupon (optional)' />
               </div>
 
@@ -235,7 +240,7 @@ function HomeContent() {
         </div>
 
         <div className={style.whyPie}>
-          <h5>Why RunescapeGP?</h5>
+          <h5>WhyRSMINE?</h5>
           <h2>100% Secure</h2>
           <h2>No Verification</h2>
           <h2>No Registration Needed</h2>

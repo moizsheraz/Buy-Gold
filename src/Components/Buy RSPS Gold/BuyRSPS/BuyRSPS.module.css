@@ -37,6 +37,7 @@
       display: -ms-flexbox;
       display: flex;
       justify-content: space-evenly;
+      margin-top: 0vw;
       margin-top: 6vw;
     }
     
@@ -103,13 +104,24 @@
     
     .content2Btns {
       width: 100%;
-      height: 15%;
+      height: 12%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 5vw;
+      /* background-color: red; */
+      
+    }
+    .content2Btns img{
+      width: 25%;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+      margin: 0 auto;
     }
     
     .content2Btns1 {
@@ -123,7 +135,19 @@
       justify-content: center;
       padding: .5vw;
       border-radius: 5px;
-      
+      /* border: 1.5px solid  ; */
+    }
+    
+    .selectedSvg {
+      border: 2px solid #1BB67F; /* Green border when selected */
+    }
+    .content2Btns1 img{
+      width: 25%;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
     }
     
     .content2Btns2 {
@@ -137,7 +161,15 @@
       justify-content: center;
       padding: .5vw;
       border-radius: 5px;
-      border: 1.5px solid #1BB67F;
+     
+    }
+    .content2Btns2 img{
+      width: 17%;
+      height: 17%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
     }
     
     .payments {
@@ -162,7 +194,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1vw 1.5vw;
+      padding: 1.2vw;
     }
     
     .cards {
@@ -192,114 +224,113 @@
     
     .TotalPrice h6 {
       font-size: .9vw;
-      color: #8891B7;
+      color: #8891AD;
     }
     
     .TotalPrice p {
       font-size: 1vw;
-      color: #fff;
     }
     
     .amountInputs {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          padding: 1vw 2vw;
-          gap: .5vw;
-          margin-top: 3vw;
-          /* background-color: red; */
-        }
-        
-        .amountInputs input {
-          padding: .8vw .5vw;
-          background-color: #282E44;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 1vw 2vw;
+      gap: .5vw;
+      margin-top: 3vw;
+      /* background-color: red; */
+    }
+    
+    .amountInputs input {
+      padding: .8vw .5vw;
+      background-color: #282E44;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      color: #ffff;
+      width: 70%;
+    }
+    
+    select{
+          background-color: #3F4866;
+          color: #fff;
           border: none;
           outline: none;
-          border-radius: 5px;
-          color: #ffff;
-          width: 70%;
-        }
-        
-        select{
-              background-color: #3F4866;
-              color: #fff;
-              border: none;
-              outline: none;
-              padding: .9vw .1vw;
-              border-radius: 4px;
-              font-size: .8rem;
-              font-weight:600;
-        }
-        select option{
-              margin: 1vw;
-              background: #3F4866;
-              color: #fff;
-              border: none;
-              outline: none;
-              font-size: 1.1vw;
-              margin: 1vw !important;
-        }
-        .amountInputs input::placeholder{
-              color: #8891B7;
-        }
-        .amountSpan {
-          padding: .6vw .3vw;
-          background-color: #282E44;
-          border: .1px solid #334052;
-          border-radius: 5px;
-        }
-        
-        .amountSpan span {
-          background-color: #3F4866;
-          padding: .8vw 1vw;
-          border-radius: 5px;
+          padding: .9vw .1vw;
+          border-radius: 4px;
+          font-size: .8rem;
+          font-weight:600;
+    }
+    select option{
+          margin: 1vw;
+          background: #3F4866;
           color: #fff;
-          font-size: .9rem;
-          font-weight: 600;
-        }
-        
-        .amount p {
-          margin-left: 1vw;
+          border: none;
+          outline: none;
+          font-size: 1.1vw;
+          margin: 1vw !important;
+    }
+    .amountInputs input::placeholder{
+          color: #8891B7;
+    }
+    .amountSpan {
+      padding: .6vw .3vw;
+      background-color: #282E44;
+      border: .1px solid #334052;
+      border-radius: 5px;
+    }
+    
+    .amountSpan span {
+      background-color: #3F4866;
+      padding: .8vw 1vw;
+      border-radius: 5px;
+      color: #fff;
+      font-size: .9rem;
+      font-weight: 600;
+    }
+    
+    .amount p {
+      margin-left: 1vw;
+  font-size: 1vw;
+  color: #5c6993;
+  font-weight: 700;
+    }
+    
+    .price p {
+      font-weight: 700;
+      margin-left: 1vw;
       font-size: 1vw;
       color: #5c6993;
-      font-weight: 700;
-        }
-        
-        .price p {
-          font-weight: 700;
-          margin-left: 1vw;
-          font-size: 1vw;
-          color: #5c6993;
-        }
-        
-       
-    .RSMINE {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          padding: 1vw 2vw;
-          gap: .5vw;
-          /* background-color: red; */
-          /* margin-top: 0vw; */
-        }
-        
-        .RSMINE input {
-          width: 50%;
-          padding: 1.4vw  1.2vw;
-          background-color: #282E44;
-          border: none;
-          outline: none;
-          border-radius: 5px;
-          color: #fff;
-          border: .1px solid #334052;
-        }
-        .RSMINE input::placeholder{
-              color: #8891B7;
-        }
+    }
+    
+   
+.RSMINE {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 1vw 2vw;
+      gap: .5vw;
+      /* background-color: red; */
+      /* margin-top: 0vw; */
+    }
+    
+    .RSMINE input {
+      width: 50%;
+      padding: 1.4vw  1.2vw;
+      background-color: #282E44;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      color: #fff;
+      border: .1px solid #334052;
+    }
+    .RSMINE input::placeholder{
+          color: #8891B7;
+    }
     
     .gci {
       width: 85%;
@@ -488,13 +519,13 @@
             font-size: 4vw;
       }
       .content1 .heading2 {
-          margin-top: 4vw;
+            margin-top: 4vw;
             font-size: 7.5vw;
             color: #FDD964;
             font-weight: bold;
       }
       .mainContentBtn {
-          margin-top: 6vw;
+            margin-top: 6vw;
             gap: 3vw;
       }
       .mainContentBtn p {
@@ -506,14 +537,19 @@
             padding: 2vw 4vw;
       }
       .content2Btns1 {
-            width: 49%;
+            width: 50%;
+      }
+      .content2Btns1 img{
+            width: 32%;
+      }
+      .content2Btns2 img{
+            width: 23%;
       }
       .content2Btns2 {
             width: 49%;
       }
       .mainContentBtn1 span {
             font-size: 5vw;
-            padding: 1vw 2vw;
       }
       .content2 {
             margin-top: 7vw;
@@ -532,54 +568,52 @@
             color: #8891B7;
       }
       .TotalPrice p {
-            font-size: 3.2vw;
-            margin-left: 1vw;
-            font-weight: 600;
+            font-size: 3vw;
       }
       .amountInputs {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             gap: 3.5vw;
-            margin-top: 3vw;
+            margin-top: 1vw;
             padding: 3vw 4vw;
       }
       .amountSpan{
-          padding: 1vw 1vw;
-      }
-      .amountInputs input {
-          padding: 1.6vw;
-            font-size: 4.5vw;
-            width: 57%;
-      }
-      .amountSpan span{
-    padding: 1.5vw 2.2vw;
-      }
-      select {
-            width: 40%; 
-            height: auto;
-            padding: 8px 3px;
-            font-size: 12px; 
-            box-sizing: border-box;
-          }
-          
-          /* Style options within the select element */
-          select option {
-            font-size: 14px;
-          }
-      .amountSpan {
-            padding: 1.5vw 2vw;
-      }
+            padding: 1vw 1vw;
+        }
+        .amountInputs input {
+            padding: 1.6vw;
+              font-size: 4vw;
+              width: 60%;
+        }
+        .amountSpan span{
+            padding: 2vw 2.2vw;
+              }
+              select {
+                  width: 40%; 
+                  height: auto;
+                  padding: 8px 3px;
+                  font-size: 12px; 
+                  box-sizing: border-box;
+                }
+                
+                /* Style options within the select element */
+                select option {
+                  font-size: 14px;
+                }
+              .amountSpan {
+                    padding: 2vw 2vw;
+              }
       .amount p {
-          margin-left: 5vw;
-          font-size: 3vw;
-    }
-    .price p {
             margin-left: 5vw;
-            font-size: 3vw;
+      font-size: 3vw;
+      }
+      .price p {
+            margin-left: 5vw;
+        font-size: 3vw;
       }
       .RSMINE {
-         
+     
             padding: 1vw 3.5vw;
             gap: 3.5vw;
       }
@@ -651,8 +685,6 @@
     @media only screen and (width > 768px) and (max-width: 1024px) {
       .content1 {
             width: 40vw;
-      }.mainContent{
-          margin-top: 20vw;
       }
       .content1 .heading1 {
             font-size: 3vw;
@@ -682,6 +714,9 @@
             font-size: 3vw;
             padding: 1.5vw 2.5vw;
       }
+      .mainContent{
+            margin-top: 20vw;
+        }
       .mainContentBtn1 span {
             font-size: 2vw;
       }
@@ -718,7 +753,6 @@
             -ms-flex-pack: distribute;
                 justify-content: space-around;
             gap: 2vw;
-          
             /* padding: 1v w; */
       }
       .amountInputs input {

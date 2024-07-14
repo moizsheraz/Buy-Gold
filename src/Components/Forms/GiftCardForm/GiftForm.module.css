@@ -51,7 +51,10 @@
       border: none;
       outline: none;
       border-radius: 5px;
-      color: #fff;
+      color: #8891b7;
+    }
+    .fields input::placeholder{
+      color: #8891b7;
     }
     .fields button{
       padding: 1.2vw;
@@ -79,8 +82,12 @@
       width: 100%;
       border: 1px solid #ccc;
       border-radius: 4px;
+      color: #8891b7;
     }
-    
+
+    .inputBox input::placeholder{
+      color: #818AAF;
+    }
     .inputBox button {
       padding: 10px;
       width: 100%;
@@ -98,19 +105,23 @@
     @media screen and (width > 300px) and (width < 768px){
 .fields input{
       width: 90%;
-      padding: 3vw;
+      padding: 4vw;
       font-size: 4vw;
 }
+.fields{
+gap: 5vw;
+}
 .cross{
-      font-size: 4vw;
+      font-size: 5vw;
 }
 .fields p{
       text-align: center;
       font-size: 3.4vw;
+      margin-top: 5vw;
 }
 .fields button{
       width: 90%;
-      padding: 3vw;
+      padding: 4vw;
       font-size: 3vw;
 }
     } 

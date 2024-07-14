@@ -14,7 +14,7 @@ const GiftForm = forwardRef(({ onClose }, ref) => {
        <div className={styles.fields}>
 <p>Redeem a gift card code to create a new order for your gold.</p>
       <input type="text" placeholder='Gift card code*' />
-      <input type="text" placeholder='Runescape Name*' />
+      <input type="text" placeholder='RSMINE Name*' />
       <button>Reedem</button>
       <img src={Logo} alt="" />
        </div>

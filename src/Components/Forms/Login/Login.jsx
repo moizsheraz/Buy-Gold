@@ -104,7 +104,7 @@ const Login = forwardRef(({ onClose, openSignUp, setIsAuth }, ref) => {
             </form>
           )}
           <div className={style.JumpReg}>
-            <p>New on RunescapeGP?</p>
+            <p>New on RSMINE?</p>
             <Link 
               to={"#"} 
               className={style.Jump} 
